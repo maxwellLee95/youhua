@@ -1,0 +1,19 @@
+App\Entity\Banner:
+    attributes:
+      id:
+          groups: ['banner:read']
+
+      image:
+          groups: ['banner:read']
+
+      type:
+          groups: ['banner:read']
+
+      link:
+          groups: ['banner:read']
+
+      goods:
+          groups: ['banner:read']
+
+      customPage:
+          groups: ['banner:read']

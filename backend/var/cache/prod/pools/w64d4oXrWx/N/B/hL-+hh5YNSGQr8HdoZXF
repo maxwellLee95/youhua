@@ -1,0 +1,120 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 
+  array (
+    'api_consumers_receipt_infos_get_subresource' => 
+    array (
+      'property' => 'receiptInfos',
+      'collection' => true,
+      'resource_class' => 'App\\Entity\\ReceiptInfo',
+      'shortNames' => 
+      array (
+        0 => 'ReceiptInfo',
+        1 => 'Consumer',
+      ),
+      'identifiers' => 
+      array (
+        0 => 
+        array (
+          0 => 'id',
+          1 => 'App\\Entity\\Consumer',
+          2 => true,
+        ),
+      ),
+      'operation_name' => 'receipt_infos_get_subresource',
+      'route_name' => 'api_consumers_receipt_infos_get_subresource',
+      'path' => '/consumers/{id}/receipt_infos.{_format}',
+      'defaults' => 
+      array (
+      ),
+      'requirements' => 
+      array (
+      ),
+      'options' => 
+      array (
+      ),
+      'host' => '',
+      'schemes' => 
+      array (
+      ),
+      'condition' => '',
+      'controller' => NULL,
+    ),
+    'api_consumers_orders_get_subresource' => 
+    array (
+      'property' => 'orders',
+      'collection' => true,
+      'resource_class' => 'App\\Entity\\Order',
+      'shortNames' => 
+      array (
+        0 => 'Order',
+        1 => 'Consumer',
+      ),
+      'identifiers' => 
+      array (
+        0 => 
+        array (
+          0 => 'id',
+          1 => 'App\\Entity\\Consumer',
+          2 => true,
+        ),
+      ),
+      'operation_name' => 'orders_get_subresource',
+      'route_name' => 'api_consumers_orders_get_subresource',
+      'path' => '/consumers/{id}/orders.{_format}',
+      'defaults' => 
+      array (
+      ),
+      'requirements' => 
+      array (
+      ),
+      'options' => 
+      array (
+      ),
+      'host' => '',
+      'schemes' => 
+      array (
+      ),
+      'condition' => '',
+      'controller' => NULL,
+    ),
+    'api_consumers_member_get_subresource' => 
+    array (
+      'property' => 'member',
+      'collection' => false,
+      'resource_class' => 'App\\Entity\\Member',
+      'shortNames' => 
+      array (
+        0 => 'Member',
+        1 => 'Consumer',
+      ),
+      'identifiers' => 
+      array (
+        0 => 
+        array (
+          0 => 'id',
+          1 => 'App\\Entity\\Consumer',
+          2 => true,
+        ),
+      ),
+      'operation_name' => 'member_get_subresource',
+      'route_name' => 'api_consumers_member_get_subresource',
+      'path' => '/consumers/{id}/member.{_format}',
+      'defaults' => 
+      array (
+      ),
+      'requirements' => 
+      array (
+      ),
+      'options' => 
+      array (
+      ),
+      'host' => '',
+      'schemes' => 
+      array (
+      ),
+      'condition' => '',
+      'controller' => NULL,
+    ),
+  ),
+);

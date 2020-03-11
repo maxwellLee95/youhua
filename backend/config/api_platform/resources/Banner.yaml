@@ -1,0 +1,54 @@
+resources:
+    App\Entity\Banner:
+        attributes:
+            normalization_context:
+                groups: ['banner:read']
+        description: '轮换图'
+
+        collectionOperations:
+            get:
+                swagger_context:
+                    tags: ['轮换图']
+                    summary: '查询轮换图数据集'
+                    description: '轮换图列表'
+
+        itemOperations:
+            get:
+                swagger_context:
+                    tags: ['轮换图']
+                    summary: '查询对应id轮换图数据'
+                    description: '对应id轮换图数据'
+
+        properties:
+            id:
+                attributes:
+                  swagger_context:
+                    description: '编号'
+            image:
+                attributes:
+                  swagger_context:
+                    description: '图片地址'
+            type:
+                attributes:
+                  swagger_context:
+                    enum: ['LK', 'GD']
+                    description: >
+                      类型
+
+                      - LK: 链接
+
+                      - GD: 商品
+            link:
+                attributes:
+                  swagger_context:
+                    description: '链接'
+
+            goods:
+                attributes:
+                  swagger_context:
+                    description: '商品'
+
+            customPage:
+                attributes:
+                  swagger_context:
+                    description: '自定义页面'

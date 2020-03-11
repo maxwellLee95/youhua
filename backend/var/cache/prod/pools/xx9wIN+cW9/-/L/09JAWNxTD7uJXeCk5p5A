@@ -1,0 +1,11 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 
+  array (
+    'softDeleteable' => true,
+    'fieldName' => 'deleted_at',
+    'timeAware' => false,
+    'hardDelete' => true,
+    'useObjectClass' => 'App\\Entity\\Consumer',
+  ),
+);

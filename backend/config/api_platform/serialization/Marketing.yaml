@@ -1,0 +1,31 @@
+App\Entity\Marketing:
+    attributes:
+        id:
+            groups: ['market:read', 'member:item:read', 'consumer:item:read']
+
+        name:
+            groups: ['market:read', 'member:item:read', 'consumer:item:read']
+
+        image:
+            groups: ['market:read']
+
+        explainText:
+            groups: ['market:read']
+
+        originalPrice:
+            groups: ['market:read']
+
+        presentPrice:
+            groups: ['market:read']
+
+        discount:
+            groups: ['market:read']
+
+        validityDate:
+            groups: ['market:read', 'member:item:read']
+
+        createdAt:
+            groups: ['market:item:read']
+
+        updatedAt:
+            groups: ['market:item:read']

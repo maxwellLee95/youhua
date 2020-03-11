@@ -1,0 +1,4 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 'O:57:"ApiPlatform\\Core\\Metadata\\Property\\PropertyNameCollection":1:{s:69:"' . "\0" . 'ApiPlatform\\Core\\Metadata\\Property\\PropertyNameCollection' . "\0" . 'properties";a:19:{i:0;s:2:"id";i:1;s:17:"totalBillByReturn";i:2;s:17:"totalBillByAppend";i:3;s:13:"consigneeName";i:4;s:15:"consigneeConcat";i:5;s:11:"orderNumber";i:6;s:6:"status";i:7;s:9:"deletedAt";i:8;s:8:"consumer";i:9;s:16:"consigneeAddress";i:10;s:5:"total";i:11;s:9:"totalExcl";i:12;s:11:"totalProfit";i:13;s:6:"paidAt";i:14;s:6:"sentAt";i:15;s:6:"tookAt";i:16;s:9:"orderBill";i:17;s:9:"createdAt";i:18;s:9:"updatedAt";}}',
+);

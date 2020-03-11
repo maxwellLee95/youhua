@@ -1,0 +1,15 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 
+  array (
+    'create' => 
+    array (
+      0 => 'created_at',
+    ),
+    'update' => 
+    array (
+      0 => 'updated_at',
+    ),
+    'useObjectClass' => 'App\\Entity\\Consumer',
+  ),
+);

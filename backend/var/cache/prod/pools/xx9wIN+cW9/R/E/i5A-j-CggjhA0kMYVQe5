@@ -1,0 +1,21 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 
+  array (
+    'uploadable' => true,
+    'allowOverwrite' => false,
+    'appendNumber' => true,
+    'path' => 'uploads/images',
+    'pathMethod' => '',
+    'fileMimeTypeField' => false,
+    'fileNameField' => false,
+    'filePathField' => 'image',
+    'fileSizeField' => false,
+    'callback' => '',
+    'filenameGenerator' => 'SHA1',
+    'maxSize' => 0.0,
+    'allowedTypes' => false,
+    'disallowedTypes' => false,
+    'useObjectClass' => 'App\\Entity\\Banner',
+  ),
+);

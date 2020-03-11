@@ -1,0 +1,4 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 'O:57:"ApiPlatform\\Core\\Metadata\\Resource\\ResourceNameCollection":1:{s:66:"' . "\0" . 'ApiPlatform\\Core\\Metadata\\Resource\\ResourceNameCollection' . "\0" . 'classes";a:10:{i:0;s:24:"App\\Entity\\ClassifyGoods";i:1;s:20:"App\\Entity\\Marketing";i:2;s:19:"App\\Entity\\Consumer";i:3;s:17:"App\\Entity\\Banner";i:4;s:16:"App\\Entity\\Goods";i:5;s:22:"App\\Entity\\ReceiptInfo";i:6;s:17:"App\\Entity\\Member";i:7;s:16:"App\\Entity\\Order";i:8;s:21:"App\\Entity\\CustomPage";i:9;s:20:"App\\Entity\\OrderBill";}}',
+);
