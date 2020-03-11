@@ -1,0 +1,4 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 'O:57:"ApiPlatform\\Core\\Metadata\\Property\\PropertyNameCollection":1:{s:69:"' . "\0" . 'ApiPlatform\\Core\\Metadata\\Property\\PropertyNameCollection' . "\0" . 'properties";a:14:{i:0;s:2:"id";i:1;s:5:"image";i:2;s:8:"nickName";i:3;s:7:"deposit";i:4;s:3:"sex";i:5;s:9:"deletedAt";i:6;s:11:"lastLoginAt";i:7;s:12:"firstLoginAt";i:8;s:12:"receiptInfos";i:9;s:6:"orders";i:10;s:6:"member";i:11;s:6:"wechat";i:12;s:9:"createdAt";i:13;s:9:"updatedAt";}}',
+);

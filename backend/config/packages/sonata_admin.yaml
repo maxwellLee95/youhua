@@ -1,0 +1,97 @@
+sonata_admin:
+    title: '油画'
+    options:
+        title_mode: 'single_text'
+    show_mosaic_button: false
+    dashboard:
+        blocks:
+            -
+                position: right
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [ sonata_user, sonata_media, sonata_admin_order ]
+
+            -
+                position: left
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [ sonata_admin_operate, sonata_admin_goods, sonata_admin_user ]
+
+            -
+                class:    col-lg-3 col-xs-6
+                position: top
+                type:     sonata.admin.block.stats
+                settings:
+                    code: app.admin.consumer
+                    icon: fa-users
+                    text: stat_consumer
+                    color: bg-green
+                    filters:
+                        status: { type: 3, value: 0 } # 3 => NumberType::TYPE_EQUAL
+
+            -
+                class:    col-lg-3 col-xs-6
+                position: top
+                type:     sonata.admin.block.stats
+                settings:
+                    code: app.admin.goods
+                    icon: fa-leaf
+                    text: stat_goods
+                    color: bg-red
+                    filters:
+                        status: { type: 3, value: 0 } # 3 => NumberType::TYPE_EQUAL
+
+            -
+                class:    col-lg-3 col-xs-6
+                position: top
+                type:     sonata.admin.block.stats
+                settings:
+                    code: app.admin.order
+                    icon: fa-leaf
+                    text: stat_order
+                    color: bg-orange
+                    filters:
+                        status: { type: 3, value: 0 } # 3 => NumberType::TYPE_EQUAL
+
+
+            # - { position: right, type: sonata.order.block.recent_orders, settings: { title: Recent Orders, number: 5, mode: admin }}
+
+
+    assets:
+        extra_javascripts:
+            # ...
+            - bundles/fosckeditor/ckeditor.js
+            - bundles/sonataformatter/vendor/markitup-markitup/markitup/jquery.markitup.js
+            - bundles/sonataformatter/markitup/sets/markdown/set.js
+            - bundles/sonataformatter/markitup/sets/html/set.js
+            - bundles/sonataformatter/markitup/sets/textile/set.js
+
+        extra_stylesheets:
+            - 'admin/css/common.css'
+            # ...
+            - bundles/sonataformatter/markitup/skins/sonata/style.css
+            - bundles/sonataformatter/markitup/sets/markdown/style.css
+            - bundles/sonataformatter/markitup/sets/html/style.css
+            - bundles/sonataformatter/markitup/sets/textile/style.css
+
+sonata_block:
+    default_contexts: [sonata_page_bundle]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+        sonata.admin.block.stats:
+            contexts:   [admin]
+        # sonata.order.block.recent_orders:
+
+picoss_sonata_extra_admin:
+    templates:
+        types:
+          show:
+            image: 'admin/show_image.html.twig'
+
+# sonata_intl:
+#     timezone:
+#         locales:
+#             fr:    Europe/Paris
+#             en_UK: Europe/London
+#             zh_CN: PRC

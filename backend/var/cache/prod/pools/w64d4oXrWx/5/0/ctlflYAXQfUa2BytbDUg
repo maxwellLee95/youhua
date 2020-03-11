@@ -1,0 +1,44 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 
+  array (
+    'api_classifies_goods_get_subresource' => 
+    array (
+      'property' => 'goods',
+      'collection' => true,
+      'resource_class' => 'App\\Entity\\Goods',
+      'shortNames' => 
+      array (
+        0 => 'Goods',
+        1 => 'Classify',
+      ),
+      'identifiers' => 
+      array (
+        0 => 
+        array (
+          0 => 'id',
+          1 => 'App\\Entity\\ClassifyGoods',
+          2 => true,
+        ),
+      ),
+      'operation_name' => 'goods_get_subresource',
+      'route_name' => 'api_classifies_goods_get_subresource',
+      'path' => '/classifies/{id}/goods.{_format}',
+      'defaults' => 
+      array (
+      ),
+      'requirements' => 
+      array (
+      ),
+      'options' => 
+      array (
+      ),
+      'host' => '',
+      'schemes' => 
+      array (
+      ),
+      'condition' => '',
+      'controller' => NULL,
+    ),
+  ),
+);

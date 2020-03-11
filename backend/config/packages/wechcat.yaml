@@ -1,0 +1,44 @@
+parameters:
+    rip.miniapp:
+      app_id: "wx7c0c304a87dddaca"
+      secret: "6b94a806f0bc5396211385744ab4f26d"
+      token: ""
+      aes_key: ""
+
+    # 微信支付
+    rip.payment:
+      app_id: "wx7c0c304a87dddaca"
+      mch_id: "1509749001"
+      key: "k6vC1uVczIN92AffoIXVRWwknGAMhApe"
+      # 如需使用敏感接口（如退款、发送红包等）需要配置 API 证书路径(登录商户平台下载 API 证书)
+      cert_path: "/data/apiclient_cert.pem" # 绝对路径
+      key_path: "/data/apiclient_key.pem"  # 绝对路径
+
+      notify_url: "http://www.nowhoarts.com/mpapp/pay/notify"
+      log:
+        default: "prod"
+        channels: 
+          prod:
+            driver: "daily"
+            path: "/data/wwwroot/www.nowhoarts.com/var/log/prod_easywechat.log"
+            level: "error"
+
+    rip.miniapp_message.ids:
+       member_success: 'r3qqjO16CXRe32HIP8hjIE9Z5hGltwVv4uxg4EttiCQ'
+       expired_notify: '8BN6t1TH1JbYVzubx-tgFI3_tZBUjxugcuoZ0kAsNF8'
+       order_success: '8BN6t1TH1JbYVzubx-tgFI3_tZBUjxugcuoZ0kAsNF8'
+       return_success: 'ywXaPD7r9Dr_EuG9tpK0f1ps5GauajG5p6atqWH_LMc'
+
+    rip.miniapp_message.pages:
+       member_success: ''
+       expired_notify: ''
+       order_success: ''
+       return_success: ''
+
+    rip.refund:
+       notify_url: "http://www.nowhoarts.com/mpapp/refund/notify"
+
+# rip.wechat:
+#     oauth:
+#         scopes: ['snsapi_userinfo']
+#         callback: 'route_name'

@@ -1,0 +1,37 @@
+App\Entity\Goods:
+    attributes:
+        id:
+            groups: ['banner:read', 'goods:read', 'order_bill:read', 'order:read', 'order:write']
+
+        name:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        stock:
+            groups: ['goods:read']
+
+        image:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        classify:
+            groups: ['goods:read']
+
+        marketPrice:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        depositPrice:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        longSize:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        wideSize:
+            groups: ['goods:read', 'order_bill:read', 'order:read']
+
+        describes:
+            groups: ['goods:read']
+
+        details:
+            groups: ['goods:item:read']
+
+        pictures:
+            groups: ['goods:item:read']
